@@ -61,7 +61,7 @@ makeall
 #
 include/config
 include/linux/version.h
-include/generated
+include/generated/*
 arch/*/include/generated
 arch/arm/boot/*
 zImage
@@ -74,6 +74,7 @@ include/linux/version.h
 include/linux/utsrelease.h
 include/linux/bounds.h
 include/generated
+usr/*
 
 # stgit generated dirs
 patches-*
