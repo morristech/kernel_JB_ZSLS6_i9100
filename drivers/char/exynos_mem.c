@@ -315,7 +315,9 @@ pr_info("[%s] requesting access to (0x%08x)-(0x%08x)\n",
 			 */
 
 			if(strcmp(b->name, "s3c-fimc") == 0 ||
-				strcmp(b->name, "fimc1") == 0) {
+				strcmp(b->name, "fimc1") == 0 ||
+				strcmp(b->name, "fimc3") == 0) 
+			{
 				allowed = true;
 				pr_info("[%s] Accessing space 0x%08x/0x%08x for '%s'\n",
 					__func__, b->start, b->size, b->name);
